@@ -6,4 +6,4 @@ services:
   -docker build -t manjucvdocker/docker-react dockerfile .
 
 script:
- -docker tun manjucvdocker/docker-react npm run test -- --coverage
+ -docker run -e CI=true manjucvdocker/docker-react npm run test
